@@ -1,10 +1,11 @@
 <?php
 
+use App\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateAbilitiesTable extends Migration
+class AddRoleIdToUsers extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +14,8 @@ class CreateAbilitiesTable extends Migration
      */
     public function up()
     {
-        Schema::create('maravel_abilities', function (Blueprint $table) {
-            $table->id();
-            $table->string('super_power')->unique();
-            $table->timestamps();
+        Schema::table('users', function (Blueprint $table) {
+            $table->unsignedBigInteger('role_id')->nullable();
         });
     }
 
@@ -27,6 +26,8 @@ class CreateAbilitiesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('abilities');
+        Schema::table('users', function (Blueprint $table) {
+            //
+        });
     }
 }

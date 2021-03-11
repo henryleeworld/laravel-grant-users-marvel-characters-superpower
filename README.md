@@ -1,4 +1,4 @@
-# Laravel 7 授予使用者漫威（Marvel）角色的超能力
+# Laravel 8 授予使用者漫威（Marvel）角色的超能力
 
 引入 inani 的 maravel-permissions 套件來擴增授予使用者漫威角色的超能力。超級英雄之所以能成為英雄，除過良好的自身素養、品格之外，超能力是最不可缺少的。
 
@@ -21,10 +21,10 @@ $ php artisan key:generate
 $ php artisan migrate --seed
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
-- 你可以經由 `/user` 來進行授予使用者漫威角色的超能力。
+- 你可以經由 `/user/show` 來進行授予使用者漫威角色的超能力。
 
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/UH5rvK2.png)
+![](https://i.imgur.com/7FjCh3w.png)
 > 超級英雄往往都有超人的力氣、或是變種特殊能力、甚至會魔法，也因為這些現實生活中不可能實現的特質，都讓粉絲沉醉其中

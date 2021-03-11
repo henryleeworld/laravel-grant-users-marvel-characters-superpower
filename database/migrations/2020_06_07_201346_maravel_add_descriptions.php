@@ -1,10 +1,11 @@
 <?php
 
+use App\User;
 use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMarvelsTable extends Migration
+class MaravelAddDescriptions extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +14,11 @@ class CreateMarvelsTable extends Migration
      */
     public function up()
     {
-        Schema::create('marvels', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
-            $table->timestamps();
+        Schema::table('maravel_roles', function (Blueprint $table) {
+            $table->text('description')->nullable();
+        });
+        Schema::table('maravel_abilities', function (Blueprint $table) {
+            $table->text('description')->nullable();
         });
     }
 
@@ -27,6 +29,6 @@ class CreateMarvelsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('marvels');
+
     }
 }
