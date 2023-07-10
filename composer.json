@@ -10,19 +10,19 @@
     "require": {
         "php": "^7.3|^8.0",
         "fideloper/proxy": "^4.4",
-        "fruitcake/laravel-cors": "^2.0",
-        "guzzlehttp/guzzle": "^7.2.0",
+        "fruitcake/laravel-cors": "^2.2",
+        "guzzlehttp/guzzle": "^7.7.0",
         "inani/maravel-permissions": "^2.1",
-        "laravel/framework": "^8.32",
-        "laravel/tinker": "^2.6"
+        "laravel/framework": "^8.83",
+        "laravel/tinker": "^2.8"
     },
     "require-dev": {
-        "facade/ignition": "^2.5",
-        "fakerphp/faker": "^1.13.0",
-        "laravel/sail": "^1.4.7",
-        "mockery/mockery": "^1.4.3",
-        "nunomaduro/collision": "^5.3",
-        "phpunit/phpunit": "^9.5.2"
+        "facade/ignition": "^2.17",
+        "fakerphp/faker": "^1.23.0",
+        "laravel/sail": "^1.23.0",
+        "mockery/mockery": "^1.6.2",
+        "nunomaduro/collision": "^5.11",
+        "phpunit/phpunit": "^9.6.10"
     },
     "config": {
         "optimize-autoloader": true,
